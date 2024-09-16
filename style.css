@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nexa, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: medium;
+  color: rgb(58, 58, 58);
+  list-style: none;
+}
+.navbar button {
+  background-color: rgb(152, 240, 63);
+  border-radius: 10px;
+  border-color: rgb(152, 240, 63);
+  padding: 15px;
+  box-shadow: none;
+  margin: 10px;
+  font-size: 100%;
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
