@@ -29,3 +29,18 @@
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
 }
+
+.div_first {
+  margin: 20px 30px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inner_first_div {
+  padding: 20px;
+}
+.inner_second_div {
+  padding: 50px;
+  color: rgb(73 75 87);
+}
