@@ -26,6 +26,13 @@
   margin: 10px;
   font-size: 100%;
 }
+.mav_inner_div{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  
+
+}
 .animate__animated.animate__bounce {
   --animate-duration: 2s;
 }
@@ -43,4 +50,75 @@
 .inner_second_div {
   padding: 50px;
   color: rgb(73 75 87);
+}
+
+
+.heading_second_div {
+  font-weight: 900;
+  margin-bottom: .5rem;
+  color: rgb(73 75 87);
+  margin-left: 30px;
+  font-size:xx-large;
+    
+}
+.div_second{
+    margin: 20px 30px 100px 30px;
+    padding: 0 20px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+}
+.inner_second_div2 {
+  height: 200px;
+
+}
+
+.para_second_div {
+  padding: 20px 40px 20px 0;
+  font-weight:400;
+  letter-spacing: 2;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .div_first {
+    flex-direction: column; /* Stack vertically on small screens */
+  }
+
+  .inner_first_div,
+  .inner_second_div,
+  .inner_second_div2,
+  .para_second_div {
+    flex: 1 1 100%; /* Each box takes full width */
+  }
+}
+
+/* Tablet View */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .div_first {
+    flex-direction: row; /* Keep horizontal layout */
+    flex-wrap: wrap;
+  }
+
+  .inner_first_div,
+  .inner_second_div,
+  .inner_second_div2,
+  .para_second_div {
+    flex: 1 1 calc(50% - 20px); /* Two boxes per row */
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1025px) {
+  .div_first {
+    flex-direction: row; /* Horizontal layout */
+  }
+
+  .inner_first_div,
+  .inner_second_div,
+  .inner_second_div2,
+  .para_second_div {
+    flex: 1 1 calc(25% - 20px); /* Four boxes in one row */
+  }
 }
